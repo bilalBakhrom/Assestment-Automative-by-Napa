@@ -17,6 +17,11 @@
 		D53CEBB32908F9EC00379AAB /* TelegramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEBB22908F9EC00379AAB /* TelegramTests.swift */; };
 		D53CEBBD2908F9EC00379AAB /* TelegramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEBBC2908F9EC00379AAB /* TelegramUITests.swift */; };
 		D53CEBBF2908F9EC00379AAB /* TelegramUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEBBE2908F9EC00379AAB /* TelegramUITestsLaunchTests.swift */; };
+		D53CEBD52909185200379AAB /* SwiftSignalKit in Frameworks */ = {isa = PBXBuildFile; productRef = D53CEBD42909185200379AAB /* SwiftSignalKit */; };
+		D53CEBD72909185200379AAB /* TelegramNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = D53CEBD62909185200379AAB /* TelegramNetwork */; };
+		D53CEBDA2909189700379AAB /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEBD92909189700379AAB /* BaseController.swift */; };
+		D53CEBDC290918C600379AAB /* BaseNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEBDB290918C600379AAB /* BaseNode.swift */; };
+		D53CEBDE290918F700379AAB /* BaseCellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEBDD290918F700379AAB /* BaseCellNode.swift */; };
 		D7FAA7DC49EB78FE153FA871 /* Pods_TelegramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72917F6788E757E18A36DD8D /* Pods_TelegramTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +61,11 @@
 		D53CEBB82908F9EC00379AAB /* TelegramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelegramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D53CEBBC2908F9EC00379AAB /* TelegramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramUITests.swift; sourceTree = "<group>"; };
 		D53CEBBE2908F9EC00379AAB /* TelegramUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D53CEBD22909183100379AAB /* SSignalKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SSignalKit; path = ../Packages/SSignalKit; sourceTree = "<group>"; };
+		D53CEBD32909184600379AAB /* TelegramNetwork */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = TelegramNetwork; path = ../Packages/TelegramNetwork; sourceTree = "<group>"; };
+		D53CEBD92909189700379AAB /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		D53CEBDB290918C600379AAB /* BaseNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNode.swift; sourceTree = "<group>"; };
+		D53CEBDD290918F700379AAB /* BaseCellNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCellNode.swift; sourceTree = "<group>"; };
 		DF4DAA8D83E3EA7E8F2F9301 /* Pods_Telegram_TelegramUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Telegram_TelegramUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E593015A855A89CF910AA63A /* Pods-Telegram-TelegramUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Telegram-TelegramUITests.release.xcconfig"; path = "Target Support Files/Pods-Telegram-TelegramUITests/Pods-Telegram-TelegramUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FB6F8F16D353236D0A664CA7 /* Pods-Telegram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Telegram.release.xcconfig"; path = "Target Support Files/Pods-Telegram/Pods-Telegram.release.xcconfig"; sourceTree = "<group>"; };
@@ -67,6 +77,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				49F71CC78D0E3737D11A7AB2 /* Pods_Telegram.framework in Frameworks */,
+				D53CEBD52909185200379AAB /* SwiftSignalKit in Frameworks */,
+				D53CEBD72909185200379AAB /* TelegramNetwork in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +114,7 @@
 		D53CEB8F2908F9E800379AAB = {
 			isa = PBXGroup;
 			children = (
+				D53CEBD12909183100379AAB /* Packages */,
 				D53CEB9A2908F9E800379AAB /* Telegram */,
 				D53CEBB12908F9EC00379AAB /* TelegramTests */,
 				D53CEBBB2908F9EC00379AAB /* TelegramUITests */,
@@ -160,6 +173,7 @@
 		D53CEBCC2908FCDC00379AAB /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				D53CEBD82909187600379AAB /* Base */,
 				D53CEBCB2908FCB400379AAB /* Delegate */,
 				D53CEBCF2908FD6400379AAB /* Calls */,
 				D53CEBD02908FD7100379AAB /* AccountDetails */,
@@ -189,6 +203,25 @@
 			children = (
 			);
 			path = AccountDetails;
+			sourceTree = "<group>";
+		};
+		D53CEBD12909183100379AAB /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				D53CEBD22909183100379AAB /* SSignalKit */,
+				D53CEBD32909184600379AAB /* TelegramNetwork */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		D53CEBD82909187600379AAB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D53CEBDB290918C600379AAB /* BaseNode.swift */,
+				D53CEBDD290918F700379AAB /* BaseCellNode.swift */,
+				D53CEBD92909189700379AAB /* BaseController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		D8EF862D8DFDE644DEDE08F8 /* Pods */ = {
@@ -222,6 +255,10 @@
 			dependencies = (
 			);
 			name = Telegram;
+			packageProductDependencies = (
+				D53CEBD42909185200379AAB /* SwiftSignalKit */,
+				D53CEBD62909185200379AAB /* TelegramNetwork */,
+			);
 			productName = Telegram;
 			productReference = D53CEB982908F9E800379AAB /* Telegram.app */;
 			productType = "com.apple.product-type.application";
@@ -442,8 +479,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D53CEBDE290918F700379AAB /* BaseCellNode.swift in Sources */,
+				D53CEBDC290918C600379AAB /* BaseNode.swift in Sources */,
 				D53CEBA02908F9E800379AAB /* CallListController.swift in Sources */,
 				D53CEB9C2908F9E800379AAB /* AppDelegate.swift in Sources */,
+				D53CEBDA2909189700379AAB /* BaseController.swift in Sources */,
 				D53CEB9E2908F9E800379AAB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -790,6 +830,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D53CEBD42909185200379AAB /* SwiftSignalKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftSignalKit;
+		};
+		D53CEBD62909185200379AAB /* TelegramNetwork */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TelegramNetwork;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D53CEB902908F9E800379AAB /* Project object */;
 }

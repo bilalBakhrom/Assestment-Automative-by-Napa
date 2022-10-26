@@ -2,11 +2,12 @@
 //  SceneDelegate.swift
 //  Telegram
 //
-//  Created by Bilal Bakhrom on 26/10/2022.
+//  Created by Bilal M. on 26/10/2022.
 //
 
 import UIKit
 
+@available(iOS 13.0, *)
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
