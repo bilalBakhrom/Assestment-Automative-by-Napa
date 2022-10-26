@@ -10,7 +10,6 @@ import AsyncDisplayKit
 public class BaseNode: ASDisplayNode {
     override public init() {
         super.init()
-        
         automaticallyManagesSubnodes = true
     }
 }

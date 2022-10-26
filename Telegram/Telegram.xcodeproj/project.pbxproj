@@ -11,7 +11,6 @@
 		974499D782F4FDE24F3A4CBC /* Pods_Telegram_TelegramUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4DAA8D83E3EA7E8F2F9301 /* Pods_Telegram_TelegramUITests.framework */; };
 		D53CEB9C2908F9E800379AAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEB9B2908F9E800379AAB /* AppDelegate.swift */; };
 		D53CEB9E2908F9E800379AAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEB9D2908F9E800379AAB /* SceneDelegate.swift */; };
-		D53CEBA02908F9E800379AAB /* CallListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEB9F2908F9E800379AAB /* CallListController.swift */; };
 		D53CEBA52908F9EB00379AAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D53CEBA42908F9EB00379AAB /* Assets.xcassets */; };
 		D53CEBA82908F9EB00379AAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D53CEBA62908F9EB00379AAB /* LaunchScreen.storyboard */; };
 		D53CEBB32908F9EC00379AAB /* TelegramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEBB22908F9EC00379AAB /* TelegramTests.swift */; };
@@ -27,6 +26,11 @@
 		D53CEBE7290919DC00379AAB /* Color+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEBE6290919DC00379AAB /* Color+Theme.swift */; };
 		D53CEBEA29091A5900379AAB /* DateFormatFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEBE929091A5900379AAB /* DateFormatFactory.swift */; };
 		D53CEBEC29091AF400379AAB /* Calendar+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEBEB29091AF400379AAB /* Calendar+Addition.swift */; };
+		D53CEBEE29091BA200379AAB /* CallsTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEBED29091BA200379AAB /* CallsTableDataSource.swift */; };
+		D53CEBF029091BC400379AAB /* CallsNodeInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEBEF29091BC400379AAB /* CallsNodeInteraction.swift */; };
+		D53CEBF229091C1600379AAB /* CallsControllerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEBF129091C1600379AAB /* CallsControllerNode.swift */; };
+		D53CEBF429091C7100379AAB /* CallsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEBF329091C7100379AAB /* CallsViewController.swift */; };
+		D53CEBF629091F6100379AAB /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEBF529091F6100379AAB /* Resource.swift */; };
 		D7FAA7DC49EB78FE153FA871 /* Pods_TelegramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72917F6788E757E18A36DD8D /* Pods_TelegramTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,7 +61,6 @@
 		D53CEB982908F9E800379AAB /* Telegram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Telegram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D53CEB9B2908F9E800379AAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D53CEB9D2908F9E800379AAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D53CEB9F2908F9E800379AAB /* CallListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallListController.swift; sourceTree = "<group>"; };
 		D53CEBA42908F9EB00379AAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D53CEBA72908F9EB00379AAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D53CEBA92908F9EB00379AAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,6 +79,11 @@
 		D53CEBE6290919DC00379AAB /* Color+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Theme.swift"; sourceTree = "<group>"; };
 		D53CEBE929091A5900379AAB /* DateFormatFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatFactory.swift; sourceTree = "<group>"; };
 		D53CEBEB29091AF400379AAB /* Calendar+Addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+Addition.swift"; sourceTree = "<group>"; };
+		D53CEBED29091BA200379AAB /* CallsTableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsTableDataSource.swift; sourceTree = "<group>"; };
+		D53CEBEF29091BC400379AAB /* CallsNodeInteraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsNodeInteraction.swift; sourceTree = "<group>"; };
+		D53CEBF129091C1600379AAB /* CallsControllerNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsControllerNode.swift; sourceTree = "<group>"; };
+		D53CEBF329091C7100379AAB /* CallsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsViewController.swift; sourceTree = "<group>"; };
+		D53CEBF529091F6100379AAB /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		DF4DAA8D83E3EA7E8F2F9301 /* Pods_Telegram_TelegramUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Telegram_TelegramUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E593015A855A89CF910AA63A /* Pods-Telegram-TelegramUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Telegram-TelegramUITests.release.xcconfig"; path = "Target Support Files/Pods-Telegram-TelegramUITests/Pods-Telegram-TelegramUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FB6F8F16D353236D0A664CA7 /* Pods-Telegram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Telegram.release.xcconfig"; path = "Target Support Files/Pods-Telegram/Pods-Telegram.release.xcconfig"; sourceTree = "<group>"; };
@@ -207,7 +215,10 @@
 		D53CEBCF2908FD6400379AAB /* Calls */ = {
 			isa = PBXGroup;
 			children = (
-				D53CEB9F2908F9E800379AAB /* CallListController.swift */,
+				D53CEBF329091C7100379AAB /* CallsViewController.swift */,
+				D53CEBF129091C1600379AAB /* CallsControllerNode.swift */,
+				D53CEBED29091BA200379AAB /* CallsTableDataSource.swift */,
+				D53CEBEF29091BC400379AAB /* CallsNodeInteraction.swift */,
 			);
 			path = Calls;
 			sourceTree = "<group>";
@@ -242,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				D53CEBE02909194000379AAB /* CallSegment.swift */,
+				D53CEBF529091F6100379AAB /* Resource.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -529,14 +541,18 @@
 				D53CEBE12909194000379AAB /* CallSegment.swift in Sources */,
 				D53CEBDE290918F700379AAB /* BaseCellNode.swift in Sources */,
 				D53CEBDC290918C600379AAB /* BaseNode.swift in Sources */,
+				D53CEBF629091F6100379AAB /* Resource.swift in Sources */,
 				D53CEBE7290919DC00379AAB /* Color+Theme.swift in Sources */,
+				D53CEBF429091C7100379AAB /* CallsViewController.swift in Sources */,
 				D53CEBEC29091AF400379AAB /* Calendar+Addition.swift in Sources */,
-				D53CEBA02908F9E800379AAB /* CallListController.swift in Sources */,
+				D53CEBF229091C1600379AAB /* CallsControllerNode.swift in Sources */,
 				D53CEB9C2908F9E800379AAB /* AppDelegate.swift in Sources */,
 				D53CEBDA2909189700379AAB /* BaseController.swift in Sources */,
 				D53CEBEA29091A5900379AAB /* DateFormatFactory.swift in Sources */,
+				D53CEBF029091BC400379AAB /* CallsNodeInteraction.swift in Sources */,
 				D53CEB9E2908F9E800379AAB /* SceneDelegate.swift in Sources */,
 				D53CEBE42909198800379AAB /* CallCellNode.swift in Sources */,
+				D53CEBEE29091BA200379AAB /* CallsTableDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

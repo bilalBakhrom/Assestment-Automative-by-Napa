@@ -9,7 +9,21 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    var window: UIWindow?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        if #available(iOS 13.0, *) {
+            // Starts from SceneDelegate.
+        } else {
+            window = UIWindow(frame: UIScreen.main.bounds)
+            
+            let viewController = CallsViewController()
+            let navigationController = UINavigationController(rootViewController: viewController)
+            window?.rootViewController = navigationController
+            window?.makeKeyAndVisible()
+        }
+        
         return true
     }
 
