@@ -7,25 +7,19 @@
 
 import Foundation
 
-public enum UserDetailType: Int, Codable {
-    case mobile = 0, username, bio
-}
-
-public struct UserDetail: Codable {
-    
-}
-
 public struct User: Identifiable, Codable {
     public var id: String
     public var firstName: String
     public var lastName: String?
     public var profileImageURL: String?
+    public var details: UserDetails? = nil
     
     internal enum CodingKeys: String, CodingKey {
         case id
         case firstName = "first_name"
         case lastName = "last_name"
         case profileImageURL = "profile_image_url"
+        case details = "user_details"
     }
 }
 

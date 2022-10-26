@@ -29,7 +29,9 @@ final class ADHeaderNode: BaseCellNode {
         // Update logs.
         callLogNode.configure(with: WTimeService(), call: call)
         // Update user details.
-        userDetails.configure()
+        if let detail = call.user.details {
+            userDetails.configure(with: detail)
+        }
     }
 }
 

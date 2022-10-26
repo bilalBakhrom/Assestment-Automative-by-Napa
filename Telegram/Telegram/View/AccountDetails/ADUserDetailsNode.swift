@@ -6,6 +6,7 @@
 //
 
 import AsyncDisplayKit
+import TelegramNetwork
 
 final class ADUserDetailsNode: BaseNode {
     private var nodes: [ASDisplayNode] = []
@@ -15,21 +16,17 @@ final class ADUserDetailsNode: BaseNode {
         backgroundColor = .Theme.secondaryBackground
     }
     
-    func configure() {
-        let infos: [UserDetail] = [
-            UserDetail(type: .mobile, name: "mobile", data: "+447796497604"),
-            UserDetail(type: .username, name: "username", data: "@onepiece"),
-            UserDetail(type: .bio, name: "bio", data: "iOS Developer"),
-        ]
-        
-        nodes = infos.map { info in
-            switch info.type {
-            case .mobile:
-                return TitleSubtitleNode(title: info.name, subtitle: info.data, isLink: true)
-            case .username:
-                return TitleSubtitleNode(title: info.name, subtitle: info.data, isLink: true)
+    func configure(with details: UserDetails) {
+        nodes = details.items.compactMap { item in
+            guard let title = item.title, let data = item.data else {
+                return nil
+            }
+            
+            switch item.type {
+            case .mobile, .username:
+                return TitleSubtitleNode(title: title, subtitle: data, isLink: true)
             case .bio:
-                return TitleSubtitleNode(title: info.name, subtitle: info.data, isLink: false)
+                return TitleSubtitleNode(title: title, subtitle: data, isLink: false)
             }
         }
     }
