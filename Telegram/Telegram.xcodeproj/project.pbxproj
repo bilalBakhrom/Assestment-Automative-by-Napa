@@ -22,6 +22,11 @@
 		D53CEBDA2909189700379AAB /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEBD92909189700379AAB /* BaseController.swift */; };
 		D53CEBDC290918C600379AAB /* BaseNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEBDB290918C600379AAB /* BaseNode.swift */; };
 		D53CEBDE290918F700379AAB /* BaseCellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEBDD290918F700379AAB /* BaseCellNode.swift */; };
+		D53CEBE12909194000379AAB /* CallSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEBE02909194000379AAB /* CallSegment.swift */; };
+		D53CEBE42909198800379AAB /* CallCellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEBE32909198800379AAB /* CallCellNode.swift */; };
+		D53CEBE7290919DC00379AAB /* Color+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEBE6290919DC00379AAB /* Color+Theme.swift */; };
+		D53CEBEA29091A5900379AAB /* DateFormatFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEBE929091A5900379AAB /* DateFormatFactory.swift */; };
+		D53CEBEC29091AF400379AAB /* Calendar+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEBEB29091AF400379AAB /* Calendar+Addition.swift */; };
 		D7FAA7DC49EB78FE153FA871 /* Pods_TelegramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72917F6788E757E18A36DD8D /* Pods_TelegramTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +71,11 @@
 		D53CEBD92909189700379AAB /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		D53CEBDB290918C600379AAB /* BaseNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNode.swift; sourceTree = "<group>"; };
 		D53CEBDD290918F700379AAB /* BaseCellNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCellNode.swift; sourceTree = "<group>"; };
+		D53CEBE02909194000379AAB /* CallSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallSegment.swift; sourceTree = "<group>"; };
+		D53CEBE32909198800379AAB /* CallCellNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallCellNode.swift; sourceTree = "<group>"; };
+		D53CEBE6290919DC00379AAB /* Color+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Theme.swift"; sourceTree = "<group>"; };
+		D53CEBE929091A5900379AAB /* DateFormatFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatFactory.swift; sourceTree = "<group>"; };
+		D53CEBEB29091AF400379AAB /* Calendar+Addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+Addition.swift"; sourceTree = "<group>"; };
 		DF4DAA8D83E3EA7E8F2F9301 /* Pods_Telegram_TelegramUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Telegram_TelegramUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E593015A855A89CF910AA63A /* Pods-Telegram-TelegramUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Telegram-TelegramUITests.release.xcconfig"; path = "Target Support Files/Pods-Telegram-TelegramUITests/Pods-Telegram-TelegramUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FB6F8F16D353236D0A664CA7 /* Pods-Telegram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Telegram.release.xcconfig"; path = "Target Support Files/Pods-Telegram/Pods-Telegram.release.xcconfig"; sourceTree = "<group>"; };
@@ -137,7 +147,12 @@
 		D53CEB9A2908F9E800379AAB /* Telegram */ = {
 			isa = PBXGroup;
 			children = (
+				D53CEBE829091A4A00379AAB /* Manager */,
+				D53CEBD82909187600379AAB /* Base */,
+				D53CEBDF2909193700379AAB /* Model */,
+				D53CEBE22909197C00379AAB /* View */,
 				D53CEBCC2908FCDC00379AAB /* Module */,
+				D53CEBE5290919D100379AAB /* Extension */,
 				D53CEBCD2908FCF800379AAB /* Resource */,
 				D53CEBA92908F9EB00379AAB /* Info.plist */,
 			);
@@ -173,7 +188,6 @@
 		D53CEBCC2908FCDC00379AAB /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				D53CEBD82909187600379AAB /* Base */,
 				D53CEBCB2908FCB400379AAB /* Delegate */,
 				D53CEBCF2908FD6400379AAB /* Calls */,
 				D53CEBD02908FD7100379AAB /* AccountDetails */,
@@ -222,6 +236,39 @@
 				D53CEBD92909189700379AAB /* BaseController.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		D53CEBDF2909193700379AAB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D53CEBE02909194000379AAB /* CallSegment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D53CEBE22909197C00379AAB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D53CEBE32909198800379AAB /* CallCellNode.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D53CEBE5290919D100379AAB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D53CEBE6290919DC00379AAB /* Color+Theme.swift */,
+				D53CEBEB29091AF400379AAB /* Calendar+Addition.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		D53CEBE829091A4A00379AAB /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				D53CEBE929091A5900379AAB /* DateFormatFactory.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		D8EF862D8DFDE644DEDE08F8 /* Pods */ = {
@@ -479,12 +526,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D53CEBE12909194000379AAB /* CallSegment.swift in Sources */,
 				D53CEBDE290918F700379AAB /* BaseCellNode.swift in Sources */,
 				D53CEBDC290918C600379AAB /* BaseNode.swift in Sources */,
+				D53CEBE7290919DC00379AAB /* Color+Theme.swift in Sources */,
+				D53CEBEC29091AF400379AAB /* Calendar+Addition.swift in Sources */,
 				D53CEBA02908F9E800379AAB /* CallListController.swift in Sources */,
 				D53CEB9C2908F9E800379AAB /* AppDelegate.swift in Sources */,
 				D53CEBDA2909189700379AAB /* BaseController.swift in Sources */,
+				D53CEBEA29091A5900379AAB /* DateFormatFactory.swift in Sources */,
 				D53CEB9E2908F9E800379AAB /* SceneDelegate.swift in Sources */,
+				D53CEBE42909198800379AAB /* CallCellNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
