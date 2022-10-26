@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49F71CC78D0E3737D11A7AB2 /* Pods_Telegram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E7C1B7919438E90E4F2B1DF /* Pods_Telegram.framework */; };
+		974499D782F4FDE24F3A4CBC /* Pods_Telegram_TelegramUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4DAA8D83E3EA7E8F2F9301 /* Pods_Telegram_TelegramUITests.framework */; };
 		D53CEB9C2908F9E800379AAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEB9B2908F9E800379AAB /* AppDelegate.swift */; };
 		D53CEB9E2908F9E800379AAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEB9D2908F9E800379AAB /* SceneDelegate.swift */; };
 		D53CEBA02908F9E800379AAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEB9F2908F9E800379AAB /* ViewController.swift */; };
@@ -16,6 +18,7 @@
 		D53CEBB32908F9EC00379AAB /* TelegramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEBB22908F9EC00379AAB /* TelegramTests.swift */; };
 		D53CEBBD2908F9EC00379AAB /* TelegramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEBBC2908F9EC00379AAB /* TelegramUITests.swift */; };
 		D53CEBBF2908F9EC00379AAB /* TelegramUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEBBE2908F9EC00379AAB /* TelegramUITestsLaunchTests.swift */; };
+		D7FAA7DC49EB78FE153FA871 /* Pods_TelegramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72917F6788E757E18A36DD8D /* Pods_TelegramTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E7C1B7919438E90E4F2B1DF /* Pods_Telegram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Telegram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72917F6788E757E18A36DD8D /* Pods_TelegramTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TelegramTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		800D13A0855444413E7891FD /* Pods-Telegram-TelegramUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Telegram-TelegramUITests.debug.xcconfig"; path = "Target Support Files/Pods-Telegram-TelegramUITests/Pods-Telegram-TelegramUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B785119439A0025C894311EB /* Pods-TelegramTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelegramTests.debug.xcconfig"; path = "Target Support Files/Pods-TelegramTests/Pods-TelegramTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CBBB564757ECF820919A8F78 /* Pods-Telegram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Telegram.debug.xcconfig"; path = "Target Support Files/Pods-Telegram/Pods-Telegram.debug.xcconfig"; sourceTree = "<group>"; };
+		CC26E7BC97357BAA498DDFFC /* Pods-TelegramTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelegramTests.release.xcconfig"; path = "Target Support Files/Pods-TelegramTests/Pods-TelegramTests.release.xcconfig"; sourceTree = "<group>"; };
 		D53CEB982908F9E800379AAB /* Telegram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Telegram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D53CEB9B2908F9E800379AAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D53CEB9D2908F9E800379AAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +58,9 @@
 		D53CEBB82908F9EC00379AAB /* TelegramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelegramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D53CEBBC2908F9EC00379AAB /* TelegramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramUITests.swift; sourceTree = "<group>"; };
 		D53CEBBE2908F9EC00379AAB /* TelegramUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DF4DAA8D83E3EA7E8F2F9301 /* Pods_Telegram_TelegramUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Telegram_TelegramUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E593015A855A89CF910AA63A /* Pods-Telegram-TelegramUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Telegram-TelegramUITests.release.xcconfig"; path = "Target Support Files/Pods-Telegram-TelegramUITests/Pods-Telegram-TelegramUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FB6F8F16D353236D0A664CA7 /* Pods-Telegram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Telegram.release.xcconfig"; path = "Target Support Files/Pods-Telegram/Pods-Telegram.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49F71CC78D0E3737D11A7AB2 /* Pods_Telegram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7FAA7DC49EB78FE153FA871 /* Pods_TelegramTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				974499D782F4FDE24F3A4CBC /* Pods_Telegram_TelegramUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CFD57449864C028870C11096 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E7C1B7919438E90E4F2B1DF /* Pods_Telegram.framework */,
+				DF4DAA8D83E3EA7E8F2F9301 /* Pods_Telegram_TelegramUITests.framework */,
+				72917F6788E757E18A36DD8D /* Pods_TelegramTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D53CEB8F2908F9E800379AAB = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +108,8 @@
 				D53CEBB12908F9EC00379AAB /* TelegramTests */,
 				D53CEBBB2908F9EC00379AAB /* TelegramUITests */,
 				D53CEB992908F9E800379AAB /* Products */,
+				D8EF862D8DFDE644DEDE08F8 /* Pods */,
+				CFD57449864C028870C11096 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +154,20 @@
 			path = TelegramUITests;
 			sourceTree = "<group>";
 		};
+		D8EF862D8DFDE644DEDE08F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CBBB564757ECF820919A8F78 /* Pods-Telegram.debug.xcconfig */,
+				FB6F8F16D353236D0A664CA7 /* Pods-Telegram.release.xcconfig */,
+				800D13A0855444413E7891FD /* Pods-Telegram-TelegramUITests.debug.xcconfig */,
+				E593015A855A89CF910AA63A /* Pods-Telegram-TelegramUITests.release.xcconfig */,
+				B785119439A0025C894311EB /* Pods-TelegramTests.debug.xcconfig */,
+				CC26E7BC97357BAA498DDFFC /* Pods-TelegramTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D53CEBC22908F9EC00379AAB /* Build configuration list for PBXNativeTarget "Telegram" */;
 			buildPhases = (
+				00C953F058A3BDB929FE6CF7 /* [CP] Check Pods Manifest.lock */,
 				D53CEB942908F9E800379AAB /* Sources */,
 				D53CEB952908F9E800379AAB /* Frameworks */,
 				D53CEB962908F9E800379AAB /* Resources */,
+				261CE229F9AADD8DAE2E6477 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D53CEBC52908F9EC00379AAB /* Build configuration list for PBXNativeTarget "TelegramTests" */;
 			buildPhases = (
+				4340CBF742861CCF7519F129 /* [CP] Check Pods Manifest.lock */,
 				D53CEBAA2908F9EC00379AAB /* Sources */,
 				D53CEBAB2908F9EC00379AAB /* Frameworks */,
 				D53CEBAC2908F9EC00379AAB /* Resources */,
@@ -169,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D53CEBC82908F9EC00379AAB /* Build configuration list for PBXNativeTarget "TelegramUITests" */;
 			buildPhases = (
+				F97AE3583A90ED77A97AD549 /* [CP] Check Pods Manifest.lock */,
 				D53CEBB42908F9EC00379AAB /* Sources */,
 				D53CEBB52908F9EC00379AAB /* Frameworks */,
 				D53CEBB62908F9EC00379AAB /* Resources */,
+				D18B1D54CDC340E7794B7851 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +298,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00C953F058A3BDB929FE6CF7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Telegram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		261CE229F9AADD8DAE2E6477 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Telegram/Pods-Telegram-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Telegram/Pods-Telegram-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Telegram/Pods-Telegram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4340CBF742861CCF7519F129 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TelegramTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D18B1D54CDC340E7794B7851 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Telegram-TelegramUITests/Pods-Telegram-TelegramUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Telegram-TelegramUITests/Pods-Telegram-TelegramUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Telegram-TelegramUITests/Pods-Telegram-TelegramUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F97AE3583A90ED77A97AD549 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Telegram-TelegramUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D53CEB942908F9E800379AAB /* Sources */ = {
@@ -366,7 +515,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +569,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -432,6 +581,7 @@
 		};
 		D53CEBC32908F9EC00379AAB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBBB564757ECF820919A8F78 /* Pods-Telegram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -440,26 +590,31 @@
 				DEVELOPMENT_TEAM = 58CQ2925XJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Telegram/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Telegram AN";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.key.Telegram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		D53CEBC42908F9EC00379AAB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB6F8F16D353236D0A664CA7 /* Pods-Telegram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -468,26 +623,31 @@
 				DEVELOPMENT_TEAM = 58CQ2925XJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Telegram/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Telegram AN";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.key.Telegram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		D53CEBC62908F9EC00379AAB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B785119439A0025C894311EB /* Pods-TelegramTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +668,7 @@
 		};
 		D53CEBC72908F9EC00379AAB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC26E7BC97357BAA498DDFFC /* Pods-TelegramTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -528,6 +689,7 @@
 		};
 		D53CEBC92908F9EC00379AAB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 800D13A0855444413E7891FD /* Pods-Telegram-TelegramUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -546,6 +708,7 @@
 		};
 		D53CEBCA2908F9EC00379AAB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E593015A855A89CF910AA63A /* Pods-Telegram-TelegramUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
