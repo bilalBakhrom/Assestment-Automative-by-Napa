@@ -7,6 +7,14 @@
 
 import Foundation
 
+public enum UserDetailType: Int, Codable {
+    case mobile = 0, username, bio
+}
+
+public struct UserDetail: Codable {
+    
+}
+
 public struct User: Identifiable, Codable {
     public var id: String
     public var firstName: String

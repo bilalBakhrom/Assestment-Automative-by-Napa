@@ -12,17 +12,17 @@ extension Call {
         static let users: [User] = {
            [
             User(
-                id: "0xEE003",
+                id: "0xEE001",
                 firstName: "Nami",
-                lastName: "Rudd",
+                lastName: "Oda",
                 profileImageURL: "https://avatars.mds.yandex.net/i?id=07852db8aee5fc5babed0b2af8942876-4458035-images-thumbs&n=13"),
             User(
-                id: "0xEE001",
+                id: "0xEE002",
                 firstName: "Luffy",
                 lastName: "Monkey D",
                 profileImageURL: "https://images.unsplash.com/photo-1592547097938-7942b22df3db?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8b25lJTIwcGllY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"),
             User(
-                id: "0xEE002",
+                id: "0xEE003",
                 firstName: "Zoro",
                 lastName: "Roronoa",
                 profileImageURL: "https://avatars.mds.yandex.net/i?id=4c5f069c55ee210c59a21065d0ee97bd-5696782-images-thumbs&n=13"),
@@ -36,12 +36,46 @@ extension Call {
                 firstName: "Sanji",
                 lastName: "Vinsumōku",
                 profileImageURL: "https://avatars.mds.yandex.net/i?id=466571a79cc38ed6a3f235e254c56c6f-5865609-images-thumbs&n=13"),
+            User(
+                id: "0xEE006",
+                firstName: "Nico",
+                lastName: "Robin",
+                profileImageURL: "https://pbs.twimg.com/media/Ctsh6AxVUAAfolP?format=jpg&name=medium"),
            ]
         }()
 
         static func respond(to request: URLRequest) throws -> Data {
             let calls: [Call] = {
                 [
+                    Call(
+                        id: 14,
+                        date: "2022-09-19T16:10:00",
+                        connection: .video,
+                        type: .incoming,
+                        incomingStatus: .accepted,
+                        duration: 224,
+                        user: users[5]),
+                    Call(
+                        id: 13,
+                        date: "2022-09-19T16:10:00",
+                        connection: .audio,
+                        type: .outgoing,
+                        duration: 100,
+                        user: users[1]),
+                    Call(
+                        id: 12,
+                        date: "2022-09-19T16:10:00",
+                        connection: .audio,
+                        type: .outgoing,
+                        duration: 50,
+                        user: users[1]),
+                    Call(
+                        id: 11,
+                        date: "2022-09-19T16:10:00",
+                        connection: .audio,
+                        type: .incoming,
+                        incomingStatus: .missed,
+                        user: users[2]),
                     Call(
                         id: 10,
                         date: "2022-09-19T16:10:00",
