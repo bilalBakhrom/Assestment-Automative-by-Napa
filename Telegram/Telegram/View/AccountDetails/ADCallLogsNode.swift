@@ -36,9 +36,8 @@ final public class ADCallLogsNode: BaseNode {
                 let text = self.makeReadableWorldTimeDate(datetime: model.datetime)
                 self.dateNode.attributedText = self.headerText(text)
                 
-            case .failure(let error):
-                print(error.localizedDescription)
-                self.dateNode.attributedText = self.headerText("Date format failed")
+            case .failure:
+                self.dateNode.attributedText = self.headerText("Couldn't get date.")
             }
         }
     }

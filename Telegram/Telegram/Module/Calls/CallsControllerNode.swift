@@ -28,7 +28,7 @@ public class CallsControllerNode: BaseNode {
         tableNode.dataSource = dataSource
         
         dataSource.reload = { [weak self] in
-            self?.tableNode.reloadData()
+            DispatchQueue.main.async { self?.tableNode.reloadData() }
         }
         
         dataSource.fetchCalls()

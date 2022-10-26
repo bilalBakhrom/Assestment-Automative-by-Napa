@@ -10,6 +10,9 @@ import AsyncDisplayKit
 public class BaseCellNode: ASCellNode {
     public override init() {
         super.init()
+        
+        backgroundColor = .clear
+        selectionStyle = .none
         automaticallyManagesSubnodes = true
     }
 }

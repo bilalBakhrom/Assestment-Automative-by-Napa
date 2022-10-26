@@ -17,7 +17,7 @@ fileprivate struct Const {
     static let contentInsets = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 14)
 }
 
-final class CallCellNode: BaseCellNode {
+final public class CallCellNode: BaseCellNode {
     private let nameNode = ASTextNode()
     private let statusNode = ASTextNode()
     private let dateNode = ASTextNode()
@@ -26,7 +26,7 @@ final class CallCellNode: BaseCellNode {
     private var openInfo: (Call) -> Void
     private var onDelete: (Call) -> Void
     
-    lazy var deleteButtonNode: ASButtonNode = {
+    private lazy var deleteButtonNode: ASButtonNode = {
         let node = ASButtonNode()
         node.setImage(UIImage(named: "icon.minus.fill"), for: .normal)
         node.style.preferredSize = CGSize(
@@ -37,7 +37,7 @@ final class CallCellNode: BaseCellNode {
         return node
     }()
     
-    lazy var iconNode: ASImageNode = {
+    private lazy var iconNode: ASImageNode = {
         let node = ASImageNode()
         node.style.preferredSize = CGSize(
             width: Const.iconSize,
@@ -46,7 +46,7 @@ final class CallCellNode: BaseCellNode {
         return node
     }()
     
-    lazy var profileImageNode: ASNetworkImageNode = {
+    private lazy var profileImageNode: ASNetworkImageNode = {
         let node = ASNetworkImageNode()
         node.backgroundColor = .gray
         node.cornerRadius = Const.profileImageSize / 2
@@ -57,75 +57,86 @@ final class CallCellNode: BaseCellNode {
         return node
     }()
     
-    lazy var infoButtonNode: ASButtonNode = {
+    private lazy var infoButtonNode: ASButtonNode = {
         let node = ASButtonNode()
         node.setImage(UIImage(named: "icon.info"), for: .normal)
-        node.style.preferredSize = CGSize(
-            width: Const.buttonSize,
-            height: Const.buttonSize)
+        node.style.preferredSize = CGSize(width: Const.buttonSize, height: Const.buttonSize)
         node.addTarget(self, action: #selector(handleInfoButtonClick), forControlEvents: .touchUpInside)
         
         return node
     }()
     
-    init(openInfo: @escaping (Call) -> Void, onDelete: @escaping (Call) -> Void) {
+    public init(openInfo: @escaping (Call) -> Void, onDelete: @escaping (Call) -> Void) {
         self.openInfo = openInfo
         self.onDelete = onDelete
-        super.init()
+        super.init()                
+    }
+}
+
+// MARK: - Setup
+extension CallCellNode {
+    public func configure(with call: Call, editing: Bool = false) {
+        self.item = call
+        self.editing = editing
         
-        backgroundColor = .clear
-        selectionStyle = .none
+        setStatus(call)
+        setImage(call.user.profileImageURL)
+        setName(call.user, missed: isMissed(call: call))
+        setDate(call.date)
     }
     
-    func configure(with item: Call, editing: Bool = false) {
-        self.item = item
-        self.editing = editing
-        var hasMissed: Bool = false
-        // Update status.
-        switch item.type {
+    private func setStatus(_ call: Call) {
+        switch call.type {
         case .incoming:
             iconNode.image = nil
-            if let incomingStatus = item.incomingStatus {
+            
+            if let incomingStatus = call.incomingStatus {
                 switch incomingStatus {
                 case .accepted:
-                    statusNode.attributedText = formatSecodaryText("Incoming \(formatDuration(item.duration))")
+                    statusNode.attributedText = makeSecodaryText("Incoming \(formatDuration(call.duration))")
                     
                 case .rejected, .missed:
-                    statusNode.attributedText = formatSecodaryText("Missed")
-                    hasMissed = true
+                    statusNode.attributedText = makeSecodaryText("Missed")
                 }
             }
             
         case .outgoing:
-            iconNode.image = item.connection == .audio ? UIImage(named: "icon.outgoing.audio") : UIImage(named: "icon.outgoing.video")
-            statusNode.attributedText = formatSecodaryText("Outgoing \(formatDuration(item.duration))")
+            setIcon(call.connection)
+            statusNode.attributedText = makeSecodaryText("Outgoing \(formatDuration(call.duration))")
         }
-        // Load image.
-        if let imagePath = item.user.profileImageURL {
+    }
+    
+    private func setImage(_ profileImageURL: String?) {
+        if let imagePath = profileImageURL {
             profileImageNode.url = URL(string: imagePath)
         } else {
             profileImageNode.url = nil
         }
-        // Update full name.
-        let fullName = [item.user.firstName, item.user.lastName].compactMap { $0 }.joined(separator: " ")
-        nameNode.attributedText = formatPrimaryText(
-            fullName,
-            color: hasMissed ? .Theme.red : .Theme.primaryLabel)
-        // Update date.
+    }
+    
+    private func setName(_ user: User, missed: Bool) {
+        let fullName = [user.firstName, user.lastName].compactMap { $0 }.joined(separator: " ")
+        nameNode.attributedText = makePrimaryText(fullName, color: makeColorForName(missed: missed))
+    }
+    
+    private func setDate(_ date: String) {
         let iDateFormatter = DateFormatFactory.shared.iDateFormatter
         let oDateFormatter = DateFormatFactory.shared.oDateFormatter
         let weeklyDateFormatter = DateFormatFactory.shared.weekDateFormatter
         
-        if let date = iDateFormatter.date(from: item.date) {
+        if let date = iDateFormatter.date(from: date) {
             let thisWeek = Calendar.current.isDateInThisWeek(date)
             let formattedDate = thisWeek ? weeklyDateFormatter.string(from: date) : oDateFormatter.string(from: date)
-            dateNode.attributedText = formatSecodaryText(formattedDate)
+            dateNode.attributedText = makeSecodaryText(formattedDate)
         } else {
             dateNode.attributedText = nil
         }
     }
-    
-    // MARK: - Actions
+}
+
+
+// MARK: - Actions
+extension CallCellNode {
     @objc private func handleDeleteButtonClick() {
         onDelete(item)
     }
@@ -133,9 +144,29 @@ final class CallCellNode: BaseCellNode {
     @objc private func handleInfoButtonClick() {
         openInfo(item)
     }
+}
+
+// MARK: - Support
+extension CallCellNode {
+    private func isMissed(call: Call) -> Bool {
+        if let status = call.incomingStatus, case .incoming = call.type {
+            return status != .accepted
+        } else {
+            return false
+        }
+    }
     
-    // MARK: - Support
-    private func formatPrimaryText(_ text: String, color: UIColor = UIColor.Theme.secondaryLabel) -> NSAttributedString {
+    private func setIcon(_ connection: CallConnection) {
+        iconNode.image = item.connection == .audio
+        ? UIImage(named: "icon.outgoing.audio")
+        : UIImage(named: "icon.outgoing.video")
+    }
+    
+    private func makeColorForName(missed: Bool) -> UIColor {
+        missed ? .Theme.red : .Theme.primaryLabel
+    }
+    
+    private func makePrimaryText(_ text: String, color: UIColor = UIColor.Theme.secondaryLabel) -> NSAttributedString {
         let attributes: [NSAttributedString.Key: Any] = [
             .foregroundColor: color,
             .font: UIFont.systemFont(ofSize: 15, weight: .regular)
@@ -146,7 +177,7 @@ final class CallCellNode: BaseCellNode {
             attributes: attributes)
     }
     
-    private func formatSecodaryText(_ text: String, color: UIColor = UIColor.Theme.secondaryLabel) -> NSAttributedString {
+    private func makeSecodaryText(_ text: String, color: UIColor = UIColor.Theme.secondaryLabel) -> NSAttributedString {
         let attributes: [NSAttributedString.Key: Any] = [
             .foregroundColor: color,
             .font: UIFont.systemFont(ofSize: 14, weight: .regular)
@@ -170,7 +201,7 @@ final class CallCellNode: BaseCellNode {
 
 // MARK: - Layout
 extension CallCellNode {
-    override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
+    public override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
         let leadingHStack = ASStackLayoutSpec(
             direction: .horizontal,
             spacing: 8,
