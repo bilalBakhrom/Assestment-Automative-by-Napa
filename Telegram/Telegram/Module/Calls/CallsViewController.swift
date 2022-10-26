@@ -2,7 +2,7 @@
 //  CallsViewController.swift
 //  Telegram
 //
-//  Created by Bilal Bakhrom on 26/10/2022.
+//  Created by Bilal M. on 26/10/2022.
 //
 
 import AsyncDisplayKit
@@ -33,7 +33,8 @@ public class CallsViewController: BaseController {
     
     public override func loadDisplayNode() {
         displayNode = CallsControllerNode(openInfo: { [weak self] call in
-            // TODO: Open account details
+            let viewController = ADViewController(call: call)
+            self?.navigationController?.pushViewController(viewController, animated: true)
         })
     }
     

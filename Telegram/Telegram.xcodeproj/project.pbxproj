@@ -32,6 +32,18 @@
 		D53CEBF429091C7100379AAB /* CallsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEBF329091C7100379AAB /* CallsViewController.swift */; };
 		D53CEBF629091F6100379AAB /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEBF529091F6100379AAB /* Resource.swift */; };
 		D53CEBF8290922EC00379AAB /* BaseNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEBF7290922EC00379AAB /* BaseNavController.swift */; };
+		D53CEBFA2909233B00379AAB /* ADViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEBF92909233B00379AAB /* ADViewController.swift */; };
+		D53CEBFC2909235A00379AAB /* ADControllerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEBFB2909235A00379AAB /* ADControllerNode.swift */; };
+		D53CEBFE290923B600379AAB /* ADCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEBFD290923B600379AAB /* ADCollectionDataSource.swift */; };
+		D53CEC002909240000379AAB /* ADHeaderNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEBFF2909240000379AAB /* ADHeaderNode.swift */; };
+		D53CEC022909242100379AAB /* ADContextNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEC012909242100379AAB /* ADContextNode.swift */; };
+		D53CEC042909245300379AAB /* ADButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEC032909245300379AAB /* ADButtonType.swift */; };
+		D53CEC062909247B00379AAB /* ADCallLogsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEC052909247B00379AAB /* ADCallLogsNode.swift */; };
+		D53CEC082909249800379AAB /* ADUserDetailsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEC072909249800379AAB /* ADUserDetailsNode.swift */; };
+		D53CEC0A290924C700379AAB /* ImageTextButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEC09290924C700379AAB /* ImageTextButtonNode.swift */; };
+		D53CEC0D290925F400379AAB /* ADButtonsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEC0C290925F400379AAB /* ADButtonsNode.swift */; };
+		D53CEC0F2909266700379AAB /* TitleSubtitleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEC0E2909266700379AAB /* TitleSubtitleNode.swift */; };
+		D53CEC11290926E200379AAB /* UserDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEC10290926E200379AAB /* UserDetail.swift */; };
 		D7FAA7DC49EB78FE153FA871 /* Pods_TelegramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72917F6788E757E18A36DD8D /* Pods_TelegramTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +98,18 @@
 		D53CEBF329091C7100379AAB /* CallsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsViewController.swift; sourceTree = "<group>"; };
 		D53CEBF529091F6100379AAB /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		D53CEBF7290922EC00379AAB /* BaseNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavController.swift; sourceTree = "<group>"; };
+		D53CEBF92909233B00379AAB /* ADViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADViewController.swift; sourceTree = "<group>"; };
+		D53CEBFB2909235A00379AAB /* ADControllerNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADControllerNode.swift; sourceTree = "<group>"; };
+		D53CEBFD290923B600379AAB /* ADCollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADCollectionDataSource.swift; sourceTree = "<group>"; };
+		D53CEBFF2909240000379AAB /* ADHeaderNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADHeaderNode.swift; sourceTree = "<group>"; };
+		D53CEC012909242100379AAB /* ADContextNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADContextNode.swift; sourceTree = "<group>"; };
+		D53CEC032909245300379AAB /* ADButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADButtonType.swift; sourceTree = "<group>"; };
+		D53CEC052909247B00379AAB /* ADCallLogsNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADCallLogsNode.swift; sourceTree = "<group>"; };
+		D53CEC072909249800379AAB /* ADUserDetailsNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADUserDetailsNode.swift; sourceTree = "<group>"; };
+		D53CEC09290924C700379AAB /* ImageTextButtonNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTextButtonNode.swift; sourceTree = "<group>"; };
+		D53CEC0C290925F400379AAB /* ADButtonsNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADButtonsNode.swift; sourceTree = "<group>"; };
+		D53CEC0E2909266700379AAB /* TitleSubtitleNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSubtitleNode.swift; sourceTree = "<group>"; };
+		D53CEC10290926E200379AAB /* UserDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetail.swift; sourceTree = "<group>"; };
 		DF4DAA8D83E3EA7E8F2F9301 /* Pods_Telegram_TelegramUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Telegram_TelegramUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E593015A855A89CF910AA63A /* Pods-Telegram-TelegramUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Telegram-TelegramUITests.release.xcconfig"; path = "Target Support Files/Pods-Telegram-TelegramUITests/Pods-Telegram-TelegramUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FB6F8F16D353236D0A664CA7 /* Pods-Telegram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Telegram.release.xcconfig"; path = "Target Support Files/Pods-Telegram/Pods-Telegram.release.xcconfig"; sourceTree = "<group>"; };
@@ -228,6 +252,9 @@
 		D53CEBD02908FD7100379AAB /* AccountDetails */ = {
 			isa = PBXGroup;
 			children = (
+				D53CEBF92909233B00379AAB /* ADViewController.swift */,
+				D53CEBFB2909235A00379AAB /* ADControllerNode.swift */,
+				D53CEBFD290923B600379AAB /* ADCollectionDataSource.swift */,
 			);
 			path = AccountDetails;
 			sourceTree = "<group>";
@@ -257,6 +284,7 @@
 			children = (
 				D53CEBE02909194000379AAB /* CallSegment.swift */,
 				D53CEBF529091F6100379AAB /* Resource.swift */,
+				D53CEC10290926E200379AAB /* UserDetail.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -264,7 +292,10 @@
 		D53CEBE22909197C00379AAB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D53CEBE32909198800379AAB /* CallCellNode.swift */,
+				D53CEC12290926F800379AAB /* Cells */,
+				D53CEC0B2909259400379AAB /* AccountDetails */,
+				D53CEC09290924C700379AAB /* ImageTextButtonNode.swift */,
+				D53CEC0E2909266700379AAB /* TitleSubtitleNode.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -284,6 +315,27 @@
 				D53CEBE929091A5900379AAB /* DateFormatFactory.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		D53CEC0B2909259400379AAB /* AccountDetails */ = {
+			isa = PBXGroup;
+			children = (
+				D53CEBFF2909240000379AAB /* ADHeaderNode.swift */,
+				D53CEC012909242100379AAB /* ADContextNode.swift */,
+				D53CEC032909245300379AAB /* ADButtonType.swift */,
+				D53CEC0C290925F400379AAB /* ADButtonsNode.swift */,
+				D53CEC052909247B00379AAB /* ADCallLogsNode.swift */,
+				D53CEC072909249800379AAB /* ADUserDetailsNode.swift */,
+			);
+			path = AccountDetails;
+			sourceTree = "<group>";
+		};
+		D53CEC12290926F800379AAB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D53CEBE32909198800379AAB /* CallCellNode.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		D8EF862D8DFDE644DEDE08F8 /* Pods */ = {
@@ -542,20 +594,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				D53CEBE12909194000379AAB /* CallSegment.swift in Sources */,
+				D53CEC11290926E200379AAB /* UserDetail.swift in Sources */,
+				D53CEBFE290923B600379AAB /* ADCollectionDataSource.swift in Sources */,
+				D53CEBFA2909233B00379AAB /* ADViewController.swift in Sources */,
 				D53CEBDE290918F700379AAB /* BaseCellNode.swift in Sources */,
 				D53CEBDC290918C600379AAB /* BaseNode.swift in Sources */,
+				D53CEC0A290924C700379AAB /* ImageTextButtonNode.swift in Sources */,
 				D53CEBF629091F6100379AAB /* Resource.swift in Sources */,
 				D53CEBE7290919DC00379AAB /* Color+Theme.swift in Sources */,
+				D53CEC062909247B00379AAB /* ADCallLogsNode.swift in Sources */,
+				D53CEC002909240000379AAB /* ADHeaderNode.swift in Sources */,
+				D53CEC0D290925F400379AAB /* ADButtonsNode.swift in Sources */,
+				D53CEBFC2909235A00379AAB /* ADControllerNode.swift in Sources */,
 				D53CEBF429091C7100379AAB /* CallsViewController.swift in Sources */,
+				D53CEC022909242100379AAB /* ADContextNode.swift in Sources */,
 				D53CEBF8290922EC00379AAB /* BaseNavController.swift in Sources */,
 				D53CEBEC29091AF400379AAB /* Calendar+Addition.swift in Sources */,
+				D53CEC0F2909266700379AAB /* TitleSubtitleNode.swift in Sources */,
 				D53CEBF229091C1600379AAB /* CallsControllerNode.swift in Sources */,
 				D53CEB9C2908F9E800379AAB /* AppDelegate.swift in Sources */,
 				D53CEBDA2909189700379AAB /* BaseController.swift in Sources */,
 				D53CEBEA29091A5900379AAB /* DateFormatFactory.swift in Sources */,
 				D53CEBF029091BC400379AAB /* CallsNodeInteraction.swift in Sources */,
 				D53CEB9E2908F9E800379AAB /* SceneDelegate.swift in Sources */,
+				D53CEC042909245300379AAB /* ADButtonType.swift in Sources */,
 				D53CEBE42909198800379AAB /* CallCellNode.swift in Sources */,
+				D53CEC082909249800379AAB /* ADUserDetailsNode.swift in Sources */,
 				D53CEBEE29091BA200379AAB /* CallsTableDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
