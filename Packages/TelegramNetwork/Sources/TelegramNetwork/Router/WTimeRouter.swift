@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum WRouter: RequestConvertible {
+public enum WTimeRouter: RequestConvertible {
     case timezone
     
     public var environment: Environment {
