@@ -31,6 +31,7 @@
 		D53CEBF229091C1600379AAB /* CallsControllerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEBF129091C1600379AAB /* CallsControllerNode.swift */; };
 		D53CEBF429091C7100379AAB /* CallsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEBF329091C7100379AAB /* CallsViewController.swift */; };
 		D53CEBF629091F6100379AAB /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEBF529091F6100379AAB /* Resource.swift */; };
+		D53CEBF8290922EC00379AAB /* BaseNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEBF7290922EC00379AAB /* BaseNavController.swift */; };
 		D7FAA7DC49EB78FE153FA871 /* Pods_TelegramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72917F6788E757E18A36DD8D /* Pods_TelegramTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +85,7 @@
 		D53CEBF129091C1600379AAB /* CallsControllerNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsControllerNode.swift; sourceTree = "<group>"; };
 		D53CEBF329091C7100379AAB /* CallsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsViewController.swift; sourceTree = "<group>"; };
 		D53CEBF529091F6100379AAB /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		D53CEBF7290922EC00379AAB /* BaseNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavController.swift; sourceTree = "<group>"; };
 		DF4DAA8D83E3EA7E8F2F9301 /* Pods_Telegram_TelegramUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Telegram_TelegramUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E593015A855A89CF910AA63A /* Pods-Telegram-TelegramUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Telegram-TelegramUITests.release.xcconfig"; path = "Target Support Files/Pods-Telegram-TelegramUITests/Pods-Telegram-TelegramUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FB6F8F16D353236D0A664CA7 /* Pods-Telegram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Telegram.release.xcconfig"; path = "Target Support Files/Pods-Telegram/Pods-Telegram.release.xcconfig"; sourceTree = "<group>"; };
@@ -245,6 +247,7 @@
 				D53CEBDB290918C600379AAB /* BaseNode.swift */,
 				D53CEBDD290918F700379AAB /* BaseCellNode.swift */,
 				D53CEBD92909189700379AAB /* BaseController.swift */,
+				D53CEBF7290922EC00379AAB /* BaseNavController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -544,6 +547,7 @@
 				D53CEBF629091F6100379AAB /* Resource.swift in Sources */,
 				D53CEBE7290919DC00379AAB /* Color+Theme.swift in Sources */,
 				D53CEBF429091C7100379AAB /* CallsViewController.swift in Sources */,
+				D53CEBF8290922EC00379AAB /* BaseNavController.swift in Sources */,
 				D53CEBEC29091AF400379AAB /* Calendar+Addition.swift in Sources */,
 				D53CEBF229091C1600379AAB /* CallsControllerNode.swift in Sources */,
 				D53CEB9C2908F9E800379AAB /* AppDelegate.swift in Sources */,
