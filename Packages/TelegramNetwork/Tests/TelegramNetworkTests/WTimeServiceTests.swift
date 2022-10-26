@@ -5,12 +5,11 @@ final class WTimeServiceTests: XCTestCase {
     func testSuccessfullyFetchingTimeZone() throws {
         let session = URLSession(mockResponder: WTime.MockDataURLResponder.self)
         let sut = WTimeService(session: session)
-        let timeExp = expectation(description: "Time is fetched")
+        let timeExp = expectation(description: "Fetch world time")
         
         sut.fetchCurrentTime { result in
-            XCTAssertNoThrow {
-                let time = try result.get()
-                XCTAssertEqual("America/Chicago", time.timezone)
+            if case let .success(time) = result {
+                XCTAssertEqual(time.timezone, "America/Chicago")
                 timeExp.fulfill()
             }
         }

@@ -8,9 +8,8 @@
 import Foundation
 
 final public class CallService: AdaptableNetwork<CallRouter> {
-    public override init(session: URLSession = URLSession.shared) {
-        let fakeSession = URLSession(fakeResponder: Call.FakeDataURLResponder.self)
-        super.init(session: fakeSession)
+    public override init(session: URLSession = .defaultSession) {
+        super.init(session: URLSession(fakeResponder: Call.FakeDataURLResponder.self))
     }
     
     public func fetchCallList(completion: @escaping ServiceCompletion<[Call]>) {

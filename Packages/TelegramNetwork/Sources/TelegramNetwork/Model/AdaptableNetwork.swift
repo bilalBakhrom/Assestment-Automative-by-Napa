@@ -14,7 +14,7 @@ public class AdaptableNetwork<SomeRouter: RequestConvertible>: Network {
     public let session: URLSession
     private var disposables: [Disposable] = []
     
-    public init(session: URLSession = URLSession.shared) {
+    public init(session: URLSession = .defaultSession) {
         self.session = session
     }
     
