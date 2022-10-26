@@ -9,4 +9,5 @@ import Foundation
 
 public enum Environment: String {
     case wtime = "http://worldtimeapi.org/api"
+    case telegram = "https://telegram.com/api"
 }
