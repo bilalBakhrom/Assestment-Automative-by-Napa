@@ -11,8 +11,7 @@
 		974499D782F4FDE24F3A4CBC /* Pods_Telegram_TelegramUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4DAA8D83E3EA7E8F2F9301 /* Pods_Telegram_TelegramUITests.framework */; };
 		D53CEB9C2908F9E800379AAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEB9B2908F9E800379AAB /* AppDelegate.swift */; };
 		D53CEB9E2908F9E800379AAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEB9D2908F9E800379AAB /* SceneDelegate.swift */; };
-		D53CEBA02908F9E800379AAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEB9F2908F9E800379AAB /* ViewController.swift */; };
-		D53CEBA32908F9E800379AAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D53CEBA12908F9E800379AAB /* Main.storyboard */; };
+		D53CEBA02908F9E800379AAB /* CallListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEB9F2908F9E800379AAB /* CallListController.swift */; };
 		D53CEBA52908F9EB00379AAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D53CEBA42908F9EB00379AAB /* Assets.xcassets */; };
 		D53CEBA82908F9EB00379AAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D53CEBA62908F9EB00379AAB /* LaunchScreen.storyboard */; };
 		D53CEBB32908F9EC00379AAB /* TelegramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CEBB22908F9EC00379AAB /* TelegramTests.swift */; };
@@ -48,8 +47,7 @@
 		D53CEB982908F9E800379AAB /* Telegram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Telegram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D53CEB9B2908F9E800379AAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D53CEB9D2908F9E800379AAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D53CEB9F2908F9E800379AAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D53CEBA22908F9E800379AAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D53CEB9F2908F9E800379AAB /* CallListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallListController.swift; sourceTree = "<group>"; };
 		D53CEBA42908F9EB00379AAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D53CEBA72908F9EB00379AAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D53CEBA92908F9EB00379AAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -126,12 +124,8 @@
 		D53CEB9A2908F9E800379AAB /* Telegram */ = {
 			isa = PBXGroup;
 			children = (
-				D53CEB9B2908F9E800379AAB /* AppDelegate.swift */,
-				D53CEB9D2908F9E800379AAB /* SceneDelegate.swift */,
-				D53CEB9F2908F9E800379AAB /* ViewController.swift */,
-				D53CEBA12908F9E800379AAB /* Main.storyboard */,
-				D53CEBA42908F9EB00379AAB /* Assets.xcassets */,
-				D53CEBA62908F9EB00379AAB /* LaunchScreen.storyboard */,
+				D53CEBCC2908FCDC00379AAB /* Module */,
+				D53CEBCD2908FCF800379AAB /* Resource */,
 				D53CEBA92908F9EB00379AAB /* Info.plist */,
 			);
 			path = Telegram;
@@ -154,6 +148,49 @@
 			path = TelegramUITests;
 			sourceTree = "<group>";
 		};
+		D53CEBCB2908FCB400379AAB /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				D53CEB9B2908F9E800379AAB /* AppDelegate.swift */,
+				D53CEB9D2908F9E800379AAB /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		D53CEBCC2908FCDC00379AAB /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				D53CEBCB2908FCB400379AAB /* Delegate */,
+				D53CEBCF2908FD6400379AAB /* Calls */,
+				D53CEBD02908FD7100379AAB /* AccountDetails */,
+				D53CEBA62908F9EB00379AAB /* LaunchScreen.storyboard */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		D53CEBCD2908FCF800379AAB /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D53CEBA42908F9EB00379AAB /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		D53CEBCF2908FD6400379AAB /* Calls */ = {
+			isa = PBXGroup;
+			children = (
+				D53CEB9F2908F9E800379AAB /* CallListController.swift */,
+			);
+			path = Calls;
+			sourceTree = "<group>";
+		};
+		D53CEBD02908FD7100379AAB /* AccountDetails */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AccountDetails;
+			sourceTree = "<group>";
+		};
 		D8EF862D8DFDE644DEDE08F8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,7 +201,6 @@
 				B785119439A0025C894311EB /* Pods-TelegramTests.debug.xcconfig */,
 				CC26E7BC97357BAA498DDFFC /* Pods-TelegramTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -279,7 +315,6 @@
 			files = (
 				D53CEBA82908F9EB00379AAB /* LaunchScreen.storyboard in Resources */,
 				D53CEBA52908F9EB00379AAB /* Assets.xcassets in Resources */,
-				D53CEBA32908F9E800379AAB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,7 +442,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D53CEBA02908F9E800379AAB /* ViewController.swift in Sources */,
+				D53CEBA02908F9E800379AAB /* CallListController.swift in Sources */,
 				D53CEB9C2908F9E800379AAB /* AppDelegate.swift in Sources */,
 				D53CEB9E2908F9E800379AAB /* SceneDelegate.swift in Sources */,
 			);
@@ -446,14 +481,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D53CEBA12908F9E800379AAB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D53CEBA22908F9E800379AAB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D53CEBA62908F9EB00379AAB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -594,7 +621,6 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -627,7 +653,6 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
